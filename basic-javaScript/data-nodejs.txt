@@ -1,0 +1,45 @@
+// Learning Order of node js
+1. JavaScript (100%)
+
+2. Node.js Basics - (Node.js kya hai? , V8 Engine , REPL , Global Objects , Event Loop , Single Threaded Architecture , Non-Blocking I/O)
+
+3. Core Modules (fs, http, path)
+
+4. NPM - ( npm init -y , package.json , Dependencies , Dev Dependencies
+        npm install express
+        npm install nodemon --save-dev)
+
+5. Modules - 1. CommonJS
+                module.exports
+                require()
+             2. ES Modules
+                export
+                import
+6. HTTP Server - (Request, Response, Routes, Status Codes)
+
+7. Express.js - (Installation, Routes, Middleware, Request & Response, Router, Error Handling) : 
+        app.get("/", (req, res)=>{
+          res.send("Hello");
+        });
+
+8. REST API - (GET, POST, PUT, PATCH, DELETE)
+
+9. MongoDB + Mongoose - (CRUD Operations, Collections, Documents, Schema, Model, Validation)
+
+10. Authentication (JWT) - (Login, Registration, Password Hashing)
+
+11. Middleware - (Custom Middleware - app.use())
+
+12. Environment Variables - (dotenv - (.env) file use)
+
+13. MVC Architecture - (controllers/ , models/ , routes/ , middlewares/)
+
+14. Project Building 
+      Practice ke liye: 
+      1. Notes API
+      2. Todo API
+      3. URL Shortener
+      4. Authentication System
+      5. Job Portal
+      6. Blog API
+      7. E-commerce Backend

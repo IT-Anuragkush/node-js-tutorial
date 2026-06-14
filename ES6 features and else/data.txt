@@ -1,0 +1,12 @@
+// async await is not version of ES6
+
+// ES6 featurs
+let vs const vs var
+Arrow Functions
+Template Literals
+Destructuring
+Spread & Rest Operator
+Promises
+Classes
+Modules (import/export)
+Async/Await (ES2017, but ES6 ke saath hi pucha jata hai)
