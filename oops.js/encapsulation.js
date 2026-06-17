@@ -22,25 +22,27 @@ class User{
 
   login(uname, pws)
   {
-    if(uname === this.userName && pws === this.#password )
-    {
-      
+    if(uname===this.username && pws===this.#password){
+      console.log("Login successfully");
+    }else{
+      console.log("Login unsuccessfull");
     }
   }
 };
 
-// create class object
-let obj = new User("Ram sharma", 1212);
+//create class object
+let obj=new User("ram sharma",1234);
 
-console.log(obj.checkPassword(1212));
-console.log(obj.checkPassword(1234));
+console.log(obj.checkPassword(1212))
+console.log(obj.checkPassword(1234))
 
-obj.userName = "Anurag";
-obj.showName();
+obj.username="Raj singh";
+obj.showName()
 
-obj.password = "3434";
-obj.showPass();  // 1212
+obj.password=34334;
+obj.showPass()
+console.log(obj.password)
 
-console.log(obj.password)  // 3434
-
-obj.login()
+obj.login("ram sharma",1234)
+obj.login("Raj singh",1234)
+obj.login("ram sharma",obj.password)
