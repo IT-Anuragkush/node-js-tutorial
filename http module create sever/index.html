@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    a{
+      margin-right: 20px;
+      font-size: 20px;
+    }
+    form{
+      margin-top: 30px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>get request : </h1>
+  <nav>
+    <a href="http://localhost:5656/">home page</a>
+    <a href="http://localhost:5656/about">about page</a>
+    <a href="http://localhost:5656/services">services</a>
+    <a href="http://localhost:5656/contact">contact us</a>
+  </nav>
+
+  <h1>post request : </h1>
+  <form action="http://localhost:5656/login" method="post">
+    <label for="">Username</label><br>
+    <input type="text" name="uname"><br><br>
+
+    <label for="">Password</label><br>
+    <input type="password" name="pws"><br><br>
+
+    <input type="submit">
+  </form>
+
+  <br>
+  <h1>put patch delete request : </h1>
+
+  <button onclick="updateData()">PUT Request</button><br><br>
+  <button onclick="patchData()">PATCH</button><br><br>
+  <button onclick="deleteData()">DELETE</button><br>
+
+  <div id="result"></div>
+
+  <script>
+   
+    async function updateData() {
+      const res = await fetch("http://localhost:5656/edit", {
+        method: "PUT"
+      });
+
+      console.log("Status:", res.status);
+
+      const data = await res.text();
+      // document.body.innerHTML += data;
+      console.log(data);
+      document.getElementById("result").innerHTML = data;
+    }
+
+    async function patchData() {
+      const res = await fetch("http://localhost:5656/singleupdate", {
+        method: "PATCH"
+      });
+
+      document.getElementById("result").innerHTML = await res.text();
+    }
+
+    async function deleteData() {
+      const res = await fetch("http://localhost:5656/delete", {
+        method: "DELETE"
+      });
+
+      document.getElementById("result").innerHTML = await res.text();
+    }
+  </script>
+</body>
+</html>
