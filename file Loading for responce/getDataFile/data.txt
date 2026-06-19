@@ -1,0 +1,7 @@
+Ryan Dahl developed and released the initial version of Node.js in 2009.While he is the original creator, the runtime environment has evolved significantly through corporate sponsorships, key software contributors, and an open-source governance model.
+
+Key Contributors and MilestonesRyan Dahl: He combined Google Chrome’s V8 JavaScript engine with an asynchronous event loop to allow JavaScript to execute 
+server-side.Joyent: A cloud computing company that corporate-sponsored the development and maintenance of Node.js during its early years.
+Isaac Schlueter: He created npm (Node Package Manager) in 2010 and took over project leadership when Ryan Dahl stepped away.
+Ben Noordhuis: A core contributor who wrote much of libuv, the fundamental C++ library that handles asynchronous I/O operations for Node.js.
+OpenJS Foundation: Node.js is currently managed and developed by an open-source community under the OpenJS Foundation (formerly the Node.js Foundation).

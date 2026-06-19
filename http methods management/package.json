@@ -1,0 +1,17 @@
+{
+  "name": "http-methods-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "http-method1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon http-method1.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
